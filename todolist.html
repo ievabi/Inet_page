@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>To Do list</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <-- Back</a>
+            <h1>Add todo item.</h1>
+            <form action="GET">
+                <label for="task-name"> Task name:</label>
+                <div>
+                    <input type="text" placeholder="Please enter task name">
+                </div>
+
+                <div>
+                    <label for="task-description"> Task description:</label>
+                    <div></div>
+                    <textarea name="task" id="task-description" cols="50" rows="20"></textarea>
+                </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="is-completed" id="completed-checkbox">
+                    <label for="completed-checkbox">Is completed?</label>
+                </div>
+
+                <div>
+                    <label for="todo-category"> Category:</label>
+                    <div></div>
+                    <select name="category" id="category-foo">
+                        <option name="category" selected value="">Choose category</option>
+                        <option name="category" value="1">Foo</option>
+                        <option name="category" value="2">Bar</option>
+
+                </div>
+                </select>
+                </div>
+                <div>
+                    <input type="submit" value="Add todo">
+                </div>
+            </form>
+</body>
+
+</html>
