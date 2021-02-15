@@ -9,10 +9,11 @@
 </head>
 
 <body>
-    <a href="index.html">
+    <a href="index.html" target="_self">
         <-- Back</a>
+
             <h1>Add todo item.</h1>
-            <form action="GET">
+            <form action method="POST">
                 <label for="task-name"> Task name:</label>
                 <div>
                     <input type="text" placeholder="Please enter task name">
@@ -30,17 +31,16 @@
                     <label for="completed-checkbox">Is completed?</label>
                 </div>
 
-                <div>
-                    <label for="todo-category"> Category:</label>
-                    <div></div>
-                    <select name="category" id="category-foo">
-                        <option name="category" selected value="">Choose category</option>
-                        <option name="category" value="1">Foo</option>
-                        <option name="category" value="2">Bar</option>
 
+                <label for="todo-category"> Category:</label>
+                <div>
+                    <select name="category" id="todo-category">
+                        <option selected value="">Choose category</option>
+                        <option value="1">Foo</option>
+                        <option value="2">Bar</option>
                 </div>
                 </select>
-                </div>
+
                 <div>
                     <input type="submit" value="Add todo">
                 </div>
