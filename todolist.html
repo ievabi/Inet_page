@@ -13,38 +13,43 @@
         <-- Back</a>
 
             <h1>Add todo item.</h1>
-            <form action method="POST">
+            <!-- <form action method="POST"> -->
+
+            <div>
                 <label for="task-name"> Task name:</label>
-                <div>
-                    <input type="text" placeholder="Please enter task name">
-                </div>
+            </div>
+            <div>
+                <input type="text" placeholder="Please enter task name">
+            </div>
 
-                <div>
-                    <label for="task-description"> Task description:</label>
-                    <div></div>
-                    <textarea name="task" id="task-description" cols="50" rows="20"></textarea>
-                </div>
-                </div>
+            <div>
+                <label for="task-description"> Task description:</label>
+            </div>
+            <div>
+                <textarea name="task" id="task-description" cols="50" rows="20"></textarea>
+            </div>
 
-                <div>
-                    <input type="checkbox" name="is-completed" id="completed-checkbox">
-                    <label for="completed-checkbox">Is completed?</label>
-                </div>
+            <div>
+                <input type="checkbox" name="is-completed" id="completed-checkbox">
+                <label for="completed-checkbox">Is completed?</label>
+            </div>
 
 
+            <div>
                 <label for="todo-category"> Category:</label>
-                <div>
-                    <select name="category" id="todo-category">
-                        <option selected value="">Choose category</option>
-                        <option value="1">Foo</option>
-                        <option value="2">Bar</option>
-                </div>
-                </select>
+            </div>
+            <div>
+                <select name="category" id="todo-category">
+                    <option selected value="">Choose category</option>
+                    <option value="1">Foo</option>
+                    <option value="2">Bar</option>
+            </div>
+            </select>
 
-                <div>
-                    <input type="submit" value="Add todo">
-                </div>
-            </form>
+            <div>
+                <input type="submit" value="Add todo">
+            </div>
+            <!-- </form> -->
 </body>
 
 </html>
